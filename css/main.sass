@@ -1,0 +1,224 @@
+@font-face
+    font-family: 'Segoe UI Light'
+    src: url('../fonts/SegoeUI/SegoeUI-Light.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'Segoe UI Regular'
+    src: url('../fonts/SegoeUI/SegoeUI.ttf') format('truetype')
+    font-weight: normal
+    font-style: normal
+
+$segoeR: "Segoe UI Regular"
+$segoeL: "Segoe UI Light"
+
+body
+    background: #FAFAFA
+    font-family: $segoeR
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: start
+    min-height: 100vh
+
+header
+    flex: 1 1 auto
+    display: flex
+    align-items: center
+    .image-container
+        position: relative
+        img
+            height: 620px
+            &:nth-child(2)
+                position: absolute
+                height: 530px
+                left: 152.5px
+                top: 28px
+
+    .login
+        &__container
+            width: 350px
+            height: 582px
+            color: #262626
+            line-height: 18px
+            font-size: 14px
+
+        &__header, &__footer
+            align-items: center
+            background-color: rgb(255, 255, 255)
+            border: 1px solid rgb(219, 219, 219)
+            border-radius: 1px
+            box-sizing: border-box
+            display: flex
+            flex-direction: column
+            flex-shrink: 0
+            font: inherit
+            font-size: 100%
+            margin: 0 0 10px
+            padding: 10px 0
+            vertical-align: baseline
+            @media screen and ( max-width: 458px )
+                background-color: transparent
+                border-color: transparent
+
+        &__header
+            height: 398px
+            img
+                width: 174px
+
+            .signin-form
+                margin-bottom: 10px
+                display: flex
+                flex-direction: column
+                align-items: center
+
+            .form-group
+                margin: 0 40px 6px
+
+            .animate-input
+                height: 38px
+                border: 1px solid #dbdbdb
+                border-radius: 3px
+                position: relative
+                span
+                    position: absolute
+                    left: 8px
+                    height: 100%
+                    font-size: 12px
+                    line-height: 36px
+                    color: #8e8e8e
+                    transform-origin: left
+                    transition: transform .1s ease-in-out
+                    pointer-events: none
+                input
+                    width: 258px
+                    height: 100%
+                    padding: 9px 8px 7px
+                    border: 0
+                    outline: 0
+                    background-color: #FAFAFA
+                    color: #262626
+                    font-size: 12px
+
+                button
+                    color: #262626
+                    border: 0
+                    outline: 0
+                    display: inline
+                    font-weight: 600
+                    font-size: 14px
+                    background: transparent
+                    position: absolute
+                    right: 8px
+                    top: 50%
+                    transform: translateY(-50%)
+                    cursor: pointer
+                    display: none
+                &.active
+                    span
+                        transform: scale(0.83333) translateY(-10px)
+                    input
+                        padding: 14px 0 2px 8px
+                    button
+                        display: inline
+
+            .login_button
+                width: 260px
+                background-color: rgba(0, 149, 246, .3)
+                border: 0
+                outline: 0
+                border-radius: 4px
+                color: #fff
+                font-size: 14px
+                font-weight: 600
+                padding: 5px 9px
+                text-align: center
+                text-overflow: ellipsis
+                border: 1px solid transparent
+                &.active
+                    background-color: rgba(0, 149, 246, 1) !important
+
+            .or
+                display: flex
+                justify-content: center
+                align-items: center
+                margin-top: 15px
+                .hr
+                    width: 100px
+                    height: 1px
+                    background: #dbdbdb
+                span
+                    color: #8e8e8e
+                    font-size: 16px
+                    line-height: 15px
+                    margin: 0 18px
+
+            .facebook
+                margin-top: 26px
+                display: flex
+                justify-content: center
+                align-items: center
+                img
+                    height: 15px
+                    width: auto
+                a
+                    margin: 0 0 0 4px
+                    text-decoration: none
+                    color: #385185
+                    font-weight: bold
+                    font-size: 14px
+                    line-height: 18px
+                    text-align: center
+
+            .forgot_password
+                text-decoration: none
+                color: #00376b
+                margin-top: 15px
+                font-size: 12px
+
+        &__footer
+            height: 63px
+            span
+                color: #262626
+                font-size: 14px
+                line-height: 18px
+
+    .download
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        p
+            margin-top: 12px
+        div
+            height: 40px
+        img
+            height: 100%
+            margin: 0 2px
+
+    @media screen and ( max-width: 458px )
+        justify-content: start
+
+footer
+    flex: 0 0 auto
+    display: flex
+    justify-content: center
+    align-items: center
+    a, span
+        font-size: 12px
+        color: #8e8e8e
+        margin-right: 15px
+    a
+        text-decoration: none
+        &:hover
+            color: #8e8e8e
+
+    .arrow
+        width: 8px
+        height: 8px
+        border-top: 1px solid #8e8e8e
+        border-right: 1px solid #8e8e8e
+        margin: 0 20px 6px 6px
+        &.down
+            transform: rotate(135deg)

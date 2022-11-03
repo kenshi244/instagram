@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row mt-sm-4 mt-0">
+          <div class="col-lg-2 col-md-0"></div>
+          <div class="col-lg-8 col-md-12 d-flex justify-content-center">
+            <div class="row m-0 p-0 pt-3">
+              <div
+                class="col-lg-6 col-md-0 d-lg-flex d-none m-0 p-0 d-flex justify-content-end"
+              >
+                <div class="image-container">
+                  <img src="img/telephone.png" alt="Telephone" />
+                  <img
+                    src="img/instagramScreenshot1.png"
+                    alt="Second telephone"
+                  />
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 m-0 p-0">
+                <div class="login__container">
+                  <div class="login__header">
+                    <img src="img/logo.png" alt="Instagram logo" />
+                    <div class="signin-form" id="signinForm">
+                      <div class="form-group">
+                        <div class="animate-input">
+                          <span>Телефон, имя пользователя или эл. адрес</span>
+                          <input type="text" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="animate-input">
+                          <span>Пароль</span>
+                          <input type="password" />
+                          <button>Показать</button>
+                        </div>
+                      </div>
+                      <button
+                        class="login_button mt-2"
+                        id="login_button"
+                        type="submit"
+                        disabled
+                      >
+                        Войти
+                      </button>
+                      <div class="or">
+                        <div class="hr"></div>
+                        <span>или</span>
+                        <div class="hr"></div>
+                      </div>
+                      <div class="facebook">
+                        <img src="img/facebook.png" alt="Facebook" />
+                        <a href="https://facebook.com">Войти через Facebook</a>
+                      </div>
+                      <a href="https://instagram.com" class="forgot_password"
+                        >Забыли пароль?</a
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="login__footer d-flex justify-content-center align-items-center"
+                  >
+                    <span
+                      >У вас ещё нет аккаунта?
+                      <a
+                        href="https://instagram.com"
+                        style="
+                          color: #0095f6;
+                          text-decoration: none;
+                          font-weight: bold;
+                        "
+                        >Зарегистрироваться</a
+                      ></span
+                    >
+                  </div>
+                  <div class="download">
+                    <p>Установите приложение.</p>
+                    <div>
+                      <img src="img/googlePlay.png" alt="Google play" />
+                      <img src="img/microsoft.png" alt="Microsoft" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-0"></div>
+        </div>
+      </div>
+    </header>
+    <footer>
+      <div class="row p-0 m-0 pb-4">
+        <div class="col-12 text-center">
+          <a href="https://instagram.com">Meta</a>
+          <a href="https://instagram.com">Информация</a>
+          <a href="https://instagram.com">Блог</a>
+          <a href="https://instagram.com">Вакансии</a>
+          <a href="https://instagram.com">Помощь</a>
+          <a href="https://instagram.com">API</a>
+          <a href="https://instagram.com">Конфиденциальность</a>
+          <a href="https://instagram.com">Условия</a>
+          <a href="https://instagram.com">Популярные аккаунты</a>
+          <a href="https://instagram.com">Хэштеги</a>
+          <a href="https://instagram.com">Места</a>
+          <a href="https://instagram.com">Instagram Lite</a>
+          <a href="https://instagram.com"
+            >Загрузка контактов лица, не являющиеся пользователями
+          </a>
+        </div>
+        <div
+          class="col-12 mt-3 d-flex justify-content-center align-items-center"
+        >
+          <a href="#" style="margin: 0">Русский</a>
+          <i class="arrow down"></i>
+          <span>© 2022 Instagram from Meta</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAUrIabzJMyaNa5YKQF01S0CgcVGlnXH38",
+        authDomain: "instagram-9dbfc.firebaseapp.com",
+        projectId: "instagram-9dbfc",
+        storageBucket: "instagram-9dbfc.appspot.com",
+        messagingSenderId: "81884153868",
+        appId: "1:81884153868:web:e2be80bc659dd373f30629",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  </body>
+</html>
